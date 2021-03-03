@@ -1,0 +1,90 @@
+{
+    "collection": "SchedulePractitioner",
+    "database": "tracker",
+    "id": "603e22ff310bd74b3c3f753d",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "checkinstatus": {
+                "bsonType": "boolean"
+            },
+            "email": {
+                "bsonType": "string"
+            },
+            "facilityname": {
+                "bsonType": "string"
+            },
+            "mobile": {
+                "bsonType": "string"
+            },
+            "name": {
+                "bsonType": "string"
+            },
+            "organisationname": {
+                "bsonType": "string"
+            },
+            "password": {
+                "bsonType": "string"
+            },
+            "role": {
+                "bsonType": "string"
+            },
+            "rolename": {
+                "bsonType": "string"
+            },
+            "shiftenddatetime": {
+                "bsonType": "date"
+            },
+            "shiftstartdatettim": {
+                "bsonType": "date"
+            },
+            "status": {
+                "bsonType": "boolean"
+            },
+            "switchaccountstatus": {
+                "bsonType": "boolean"
+            },
+            "userid": {
+                "bsonType": "string"
+            },
+            "wardname": {
+                "bsonType": "string"
+            }
+        },
+        "required": [
+            "_id",
+            "_partition",
+            "userid",
+            "password",
+            "name",
+            "mobile",
+            "email",
+            "role",
+            "facilityname",
+            "rolename",
+            "organisationname",
+            "checkinstatus",
+            "switchaccountstatus",
+            "wardname",
+            "shiftstartdatettim",
+            "shiftenddatetime",
+            "status"
+        ],
+        "title": "SchedulePractitioner"
+    }
+}

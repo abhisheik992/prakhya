@@ -1,0 +1,124 @@
+{
+    "collection": "OTRecording",
+    "database": "tracker",
+    "id": "603e1df8d41399b66882f159",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "bladder_catheterized": {
+                "bsonType": "int"
+            },
+            "blood_loss": {
+                "bsonType": "int"
+            },
+            "context": {
+                "bsonType": "string"
+            },
+            "date": {
+                "bsonType": "date"
+            },
+            "encounter_id": {
+                "bsonType": "string"
+            },
+            "fibroids": {
+                "bsonType": "string"
+            },
+            "forceps": {
+                "bsonType": "int"
+            },
+            "gn_id": {
+                "bsonType": "string"
+            },
+            "hpe": {
+                "bsonType": "string"
+            },
+            "instruments_counted": {
+                "bsonType": "string"
+            },
+            "intrapartum_complications": {
+                "bsonType": "string"
+            },
+            "lt_ovary": {
+                "bsonType": "string"
+            },
+            "mr": {
+                "bsonType": "string"
+            },
+            "notes": {
+                "bsonType": "string"
+            },
+            "performer": {
+                "bsonType": "string"
+            },
+            "placenta_weight": {
+                "bsonType": "string"
+            },
+            "rt_ovary": {
+                "bsonType": "string"
+            },
+            "rt_tube": {
+                "bsonType": "string"
+            },
+            "sent_for_hpe": {
+                "bsonType": "string"
+            },
+            "swab_counted": {
+                "bsonType": "string"
+            },
+            "team_performed": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "anesthetist": {
+                            "bsonType": "string"
+                        },
+                        "procedure_assisted_by": {
+                            "bsonType": "string"
+                        },
+                        "procedure_done_by": {
+                            "bsonType": "string"
+                        },
+                        "surgeon_name": {
+                            "bsonType": "string"
+                        },
+                        "type_of_anesthesia": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "team_performed"
+                }
+            },
+            "time": {
+                "bsonType": "string"
+            },
+            "tubectomy": {
+                "bsonType": "string"
+            },
+            "uterine_anomaly": {
+                "bsonType": "string"
+            }
+        },
+        "required": [
+            "_id",
+            "_partition",
+            "mr"
+        ],
+        "title": "OTRecording"
+    }
+}

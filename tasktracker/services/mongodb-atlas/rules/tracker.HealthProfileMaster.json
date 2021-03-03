@@ -1,0 +1,93 @@
+{
+    "collection": "HealthProfileMaster",
+    "database": "tracker",
+    "id": "603e2598e4b688e16f70b7f0",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "comorbidities": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "affectedArea": {
+                            "bsonType": "string"
+                        },
+                        "case": {
+                            "bsonType": "string"
+                        },
+                        "code": {
+                            "bsonType": "string"
+                        },
+                        "label": {
+                            "bsonType": "string"
+                        },
+                        "medicalDisorder": {
+                            "bsonType": "string"
+                        },
+                        "nature": {
+                            "bsonType": "string"
+                        },
+                        "physical": {
+                            "bsonType": "string"
+                        },
+                        "snomedCode": {
+                            "bsonType": "int"
+                        },
+                        "snomedTerm": {
+                            "bsonType": "string"
+                        },
+                        "subject": {
+                            "bsonType": "string"
+                        },
+                        "type": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "comorbidities"
+                }
+            },
+            "complaintsMaster": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "code": {
+                            "bsonType": "string"
+                        },
+                        "label": {
+                            "bsonType": "string"
+                        },
+                        "nature": {
+                            "bsonType": "string"
+                        },
+                        "type": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "complaintsMaster"
+                }
+            }
+        },
+        "required": [
+            "_id",
+            "_partition"
+        ],
+        "title": "HealthProfileMaster"
+    }
+}

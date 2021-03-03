@@ -1,0 +1,184 @@
+{
+    "collection": "Patient",
+    "database": "tracker",
+    "id": "603e1e8d310bd74b3c3ed3fb",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "BPLPMJAY_Status": {
+                "bsonType": "string"
+            },
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "address": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "_partition": {
+                            "bsonType": "string"
+                        },
+                        "addrs": {
+                            "bsonType": "string"
+                        },
+                        "city": {
+                            "bsonType": "string"
+                        },
+                        "country": {
+                            "bsonType": "string"
+                        },
+                        "district": {
+                            "bsonType": "string"
+                        },
+                        "pin": {
+                            "bsonType": "string"
+                        },
+                        "state": {
+                            "bsonType": "string"
+                        },
+                        "status": {
+                            "bsonType": "string"
+                        },
+                        "type": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "Address"
+                }
+            },
+            "age": {
+                "bsonType": "int"
+            },
+            "authorized_id_num": {
+                "bsonType": "string"
+            },
+            "authorized_id_type": {
+                "bsonType": "string"
+            },
+            "blood_grp": {
+                "bsonType": "string"
+            },
+            "contact": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "Email": {
+                            "bsonType": "string"
+                        },
+                        "_partition": {
+                            "bsonType": "string"
+                        },
+                        "c_name": {
+                            "bsonType": "string"
+                        },
+                        "number": {
+                            "bsonType": "int"
+                        },
+                        "status": {
+                            "bsonType": "string"
+                        },
+                        "type": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "Contact"
+                }
+            },
+            "dob": {
+                "bsonType": "string"
+            },
+            "encounter_id": {
+                "bsonType": "string"
+            },
+            "first_name": {
+                "bsonType": "string"
+            },
+            "health_id": {
+                "bsonType": "string"
+            },
+            "last_name": {
+                "bsonType": "string"
+            },
+            "marital_status": {
+                "bsonType": "string"
+            },
+            "mr": {
+                "bsonType": "string"
+            },
+            "rch_no": {
+                "bsonType": "string"
+            },
+            "risk_level": {
+                "bsonType": "string"
+            },
+            "spouse": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "_partition": {
+                            "bsonType": "string"
+                        },
+                        "marriage_relation ": {
+                            "bsonType": "string"
+                        },
+                        "married_for": {
+                            "bsonType": "string"
+                        },
+                        "s_blood_grp": {
+                            "bsonType": "string"
+                        },
+                        "s_dob": {
+                            "bsonType": "string"
+                        },
+                        "s_first_name": {
+                            "bsonType": "string"
+                        },
+                        "s_last_name": {
+                            "bsonType": "string"
+                        },
+                        "s_sge": {
+                            "bsonType": "int"
+                        }
+                    },
+                    "title": "Spouse"
+                }
+            },
+            "status": {
+                "bsonType": "string"
+            },
+            "uhid": {
+                "bsonType": "string"
+            }
+        },
+        "required": [
+            "_id",
+            "_partition",
+            "mr",
+            "first_name",
+            "last_name",
+            "dob",
+            "age",
+            "blood_grp",
+            "s_first_name",
+            "s_last_name",
+            "c_name",
+            "married_for"
+        ],
+        "title": "Patient"
+    }
+}

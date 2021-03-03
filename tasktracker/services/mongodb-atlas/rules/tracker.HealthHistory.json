@@ -1,0 +1,85 @@
+{
+    "collection": "HealthHistory",
+    "database": "tracker",
+    "id": "603e1b1c5bd76abc7a565be0",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "allergy": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "type": {
+                            "bsonType": "string"
+                        },
+                        "value": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "allergy"
+                }
+            },
+            "family": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "relationship": {
+                            "bsonType": "string"
+                        },
+                        "value": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "family"
+                }
+            },
+            "gn_id": {
+                "bsonType": "string"
+            },
+            "mr": {
+                "bsonType": "string"
+            },
+            "surgical": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "nature": {
+                            "bsonType": "string"
+                        },
+                        "type": {
+                            "bsonType": "string"
+                        },
+                        "value": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "surgical"
+                }
+            }
+        },
+        "required": [
+            "id",
+            "_partition",
+            "mr"
+        ],
+        "title": "HealthHistory"
+    }
+}

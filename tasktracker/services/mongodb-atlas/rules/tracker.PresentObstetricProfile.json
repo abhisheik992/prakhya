@@ -1,0 +1,133 @@
+{
+    "collection": "PresentObstetricProfile",
+    "database": "tracker",
+    "id": "603e209ad41399b668834b66",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "comments": {
+                "bsonType": "string"
+            },
+            "first_trimister": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "code": {
+                            "bsonType": "string"
+                        },
+                        "label": {
+                            "bsonType": "string"
+                        },
+                        "nature": {
+                            "bsonType": "string"
+                        },
+                        "type": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "first_trimister"
+                }
+            },
+            "gn_id": {
+                "bsonType": "string"
+            },
+            "menstrual_complications": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "code": {
+                            "bsonType": "string"
+                        },
+                        "label": {
+                            "bsonType": "string"
+                        },
+                        "nature": {
+                            "bsonType": "string"
+                        },
+                        "type": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "menstrual_complications"
+                }
+            },
+            "menstrual_cycles": {
+                "bsonType": "string"
+            },
+            "mr": {
+                "bsonType": "string"
+            },
+            "scan_edd": {
+                "bsonType": "string"
+            },
+            "scan_ga": {
+                "bsonType": "string"
+            },
+            "second_trimister": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "code": {
+                            "bsonType": "string"
+                        },
+                        "label": {
+                            "bsonType": "string"
+                        },
+                        "nature": {
+                            "bsonType": "string"
+                        },
+                        "type": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "second_trimister"
+                }
+            },
+            "third_trimister": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "code": {
+                            "bsonType": "string"
+                        },
+                        "label": {
+                            "bsonType": "string"
+                        },
+                        "nature": {
+                            "bsonType": "string"
+                        },
+                        "type": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "third_trimister"
+                }
+            }
+        },
+        "required": [
+            "id",
+            "_partition",
+            "mr"
+        ],
+        "title": "PresentObstetricProfile"
+    }
+}

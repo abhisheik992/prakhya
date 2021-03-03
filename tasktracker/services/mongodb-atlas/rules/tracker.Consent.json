@@ -1,0 +1,90 @@
+{
+    "collection": "Consent",
+    "database": "tracker",
+    "id": "603e1952e4b688e16f6ecf8b",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "category": {
+                "bsonType": "string"
+            },
+            "dateTime": {
+                "bsonType": "date"
+            },
+            "encounter_id": {
+                "bsonType": "string"
+            },
+            "mr": {
+                "bsonType": "string"
+            },
+            "note": {
+                "bsonType": "string"
+            },
+            "p_name": {
+                "bsonType": "string"
+            },
+            "p_relation": {
+                "bsonType": "string"
+            },
+            "policy": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        " authority": {
+                            "bsonType": "string"
+                        },
+                        "_partition": {
+                            "bsonType": "string"
+                        },
+                        "s_dob": {
+                            "bsonType": "date"
+                        },
+                        "uri": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "Policy"
+                }
+            },
+            "policy_rule": {
+                "bsonType": "string"
+            },
+            "s_provider": {
+                "bsonType": "string"
+            },
+            "scope": {
+                "bsonType": "string"
+            },
+            "source_attachment": {
+                "bsonType": "string"
+            },
+            "status": {
+                "bsonType": "string"
+            }
+        },
+        "required": [
+            "_id",
+            "_partition",
+            "mr",
+            "p_name",
+            "p_relation"
+        ],
+        "title": "Consent"
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "collection": "PastObstetricProfile",
+    "database": "tracker",
+    "id": "603e1e32310bd74b3c3ec86d",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "gn_id": {
+                "bsonType": "string"
+            },
+            "mr": {
+                "bsonType": "string"
+            },
+            "past_obstetric_complications": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "code": {
+                            "bsonType": "string"
+                        },
+                        "label": {
+                            "bsonType": "string"
+                        },
+                        "nature": {
+                            "bsonType": "string"
+                        },
+                        "type": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "past_obstetric_complications"
+                }
+            },
+            "past_pregnancy_details": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "anaesthesia_type": {
+                            "bsonType": "string"
+                        },
+                        "apgar": {
+                            "bsonType": "string"
+                        },
+                        "cried_immediately": {
+                            "bsonType": "string"
+                        },
+                        "delivery_date": {
+                            "bsonType": "string"
+                        },
+                        "delivery_place": {
+                            "bsonType": "string"
+                        },
+                        "delivery_time": {
+                            "bsonType": "string"
+                        },
+                        "ga": {
+                            "bsonType": "string"
+                        },
+                        "gender": {
+                            "bsonType": "string"
+                        },
+                        "gestationalAge": {
+                            "bsonType": "string"
+                        },
+                        "immunized": {
+                            "bsonType": "string"
+                        },
+                        "outcome": {
+                            "bsonType": "string"
+                        },
+                        "perterm": {
+                            "bsonType": "string"
+                        },
+                        "present_status": {
+                            "bsonType": "string"
+                        },
+                        "reason": {
+                            "bsonType": "string"
+                        },
+                        "weight": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "past_pregnancy_details"
+                }
+            }
+        },
+        "required": [
+            "id",
+            "_partition",
+            "mr"
+        ],
+        "title": "PastObstetricProfile"
+    }
+}

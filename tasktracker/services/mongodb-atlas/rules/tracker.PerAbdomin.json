@@ -1,0 +1,94 @@
+{
+    "collection": "PerAbdomin",
+    "database": "tracker",
+    "id": "603e1ef2e4b688e16f6f90f9",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "gn_id": {
+                "bsonType": "string"
+            },
+            "mr": {
+                "bsonType": "string"
+            },
+            "per_abdomin": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "child_info": {
+                            "bsonType": "array",
+                            "items": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "child_num": {
+                                        "bsonType": "int"
+                                    },
+                                    "fetal_heart_rate": {
+                                        "bsonType": "int"
+                                    },
+                                    "lie": {
+                                        "bsonType": "string"
+                                    },
+                                    "position": {
+                                        "bsonType": "string"
+                                    },
+                                    "presentation": {
+                                        "bsonType": "string"
+                                    }
+                                },
+                                "title": "child_info"
+                            }
+                        },
+                        "context": {
+                            "bsonType": "string"
+                        },
+                        "createdDate": {
+                            "bsonType": "date"
+                        },
+                        "engagement": {
+                            "bsonType": "string"
+                        },
+                        "fetal_movement": {
+                            "bsonType": "string"
+                        },
+                        "fundal_height": {
+                            "bsonType": "string"
+                        },
+                        "performer": {
+                            "bsonType": "string"
+                        },
+                        "uterine_contractions": {
+                            "bsonType": "string"
+                        },
+                        "uterine_tenderness": {
+                            "bsonType": "string"
+                        }
+                    }
+                },
+                "title": "per_abdomin"
+            }
+        },
+        "required": [
+            "_id",
+            "_partition",
+            "mr"
+        ],
+        "title": "PerAbdomin"
+    }
+}

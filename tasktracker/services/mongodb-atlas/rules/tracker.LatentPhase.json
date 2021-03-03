@@ -1,0 +1,199 @@
+{
+    "collection": "LatentPhase",
+    "database": "tracker",
+    "id": "603e1c44d41399b66882bb74",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "context": {
+                "bsonType": "string"
+            },
+            "date": {
+                "bsonType": "date"
+            },
+            "encounter_id": {
+                "bsonType": "string"
+            },
+            "gn_id": {
+                "bsonType": "string"
+            },
+            "mr": {
+                "bsonType": "string"
+            },
+            "non_stress_test": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "accelertion": {
+                            "bsonType": "string"
+                        },
+                        "baseline_fhr": {
+                            "bsonType": "string"
+                        },
+                        "contractions": {
+                            "bsonType": "string"
+                        },
+                        "deceleration": {
+                            "bsonType": "string"
+                        },
+                        "non_stress_remarks": {
+                            "bsonType": "string"
+                        },
+                        "nst_date": {
+                            "bsonType": "string"
+                        },
+                        "nst_duration": {
+                            "bsonType": "string"
+                        },
+                        "obstetric_complications": {
+                            "bsonType": "string"
+                        },
+                        "opinion": {
+                            "bsonType": "string"
+                        },
+                        "rate_of_fhr": {
+                            "bsonType": "string"
+                        },
+                        "risk_determination": {
+                            "bsonType": "string"
+                        },
+                        "variability": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "non_stress_test"
+                }
+            },
+            "per_abdomen_examination": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        " fundal_height": {
+                            "bsonType": "string"
+                        },
+                        " presentation": {
+                            "bsonType": "string"
+                        },
+                        "engagement": {
+                            "bsonType": "string"
+                        },
+                        "fetal_heart_rate": {
+                            "bsonType": "string"
+                        },
+                        "fetal_movement": {
+                            "bsonType": "string"
+                        },
+                        "lie": {
+                            "bsonType": "string"
+                        },
+                        "uterine_contractions": {
+                            "bsonType": "string"
+                        },
+                        "uterine_tenderness": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "per_abdomen_examination"
+                }
+            },
+            "per_speculum_examination": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "cervical_dilation": {
+                            "bsonType": "string"
+                        },
+                        "color_of_amniotic_fluid": {
+                            "bsonType": "string"
+                        },
+                        "hand_presentation": {
+                            "bsonType": "string"
+                        },
+                        "umbilical_prolase": {
+                            "bsonType": "string"
+                        },
+                        "vaginal_bleeding": {
+                            "bsonType": "string"
+                        },
+                        "vaginal_trauma": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "per_speculum_examination"
+                }
+            },
+            "per_vaginal_examination": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        " membranes": {
+                            "bsonType": "string"
+                        },
+                        "cervical_consistency": {
+                            "bsonType": "string"
+                        },
+                        "cervical_dilation": {
+                            "bsonType": "string"
+                        },
+                        "cervical_length": {
+                            "bsonType": "string"
+                        },
+                        "effacement": {
+                            "bsonType": "string"
+                        },
+                        "m_date": {
+                            "bsonType": "string"
+                        },
+                        "m_time": {
+                            "bsonType": "string"
+                        },
+                        "molding": {
+                            "bsonType": "string"
+                        },
+                        "presenting_part": {
+                            "bsonType": "string"
+                        },
+                        "pv_remarks": {
+                            "bsonType": "string"
+                        },
+                        "station": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "per_vaginal_examination"
+                }
+            },
+            "performer": {
+                "bsonType": "string"
+            },
+            "time": {
+                "bsonType": "string"
+            }
+        },
+        "required": [
+            "id",
+            "_partition",
+            "mr"
+        ],
+        "title": "LatentPhase"
+    }
+}

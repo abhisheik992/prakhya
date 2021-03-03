@@ -1,0 +1,45 @@
+{
+    "collection": "Ward",
+    "database": "tracker",
+    "id": "603e24d7d41399b668841c75",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "email": {
+                "bsonType": "string"
+            },
+            "facility": {
+                "bsonType": "string"
+            },
+            "name": {
+                "bsonType": "string"
+            },
+            "password": {
+                "bsonType": "string"
+            }
+        },
+        "required": [
+            "_id",
+            "_partition",
+            "name",
+            "email",
+            "password"
+        ],
+        "title": "Ward"
+    }
+}

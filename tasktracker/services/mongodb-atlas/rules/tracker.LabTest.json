@@ -1,0 +1,73 @@
+{
+    "collection": "LabTest",
+    "database": "tracker",
+    "id": "603e1bf95bd76abc7a5679d3",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "gn_id": {
+                "bsonType": "string"
+            },
+            "mr": {
+                "bsonType": "string"
+            },
+            "usg_findings": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "afi": {
+                            "bsonType": "string"
+                        },
+                        "context": {
+                            "bsonType": "string"
+                        },
+                        "createdDate": {
+                            "bsonType": "date"
+                        },
+                        "fetal_postion": {
+                            "bsonType": "string"
+                        },
+                        "fetal_weight": {
+                            "bsonType": "string"
+                        },
+                        "ga_date": {
+                            "bsonType": "string"
+                        },
+                        "performer": {
+                            "bsonType": "string"
+                        },
+                        "placenta_postion": {
+                            "bsonType": "string"
+                        },
+                        "usg_date": {
+                            "bsonType": "string"
+                        }
+                    }
+                },
+                "title": "usg_findings"
+            }
+        },
+        "required": [
+            "id",
+            "_partition",
+            "mr"
+        ],
+        "title": "LabTest"
+    }
+}

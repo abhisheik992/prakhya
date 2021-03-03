@@ -1,0 +1,85 @@
+{
+    "collection": "PerSpeculum",
+    "database": "tracker",
+    "id": "603e1f27310bd74b3c3ee7a0",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "gn_id": {
+                "bsonType": "string"
+            },
+            "mr": {
+                "bsonType": "string"
+            },
+            "per_speculum": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "cervical_dilation": {
+                            "bsonType": "int"
+                        },
+                        "colour_of_amniotic_fluid": {
+                            "bsonType": "array",
+                            "items": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "fluid": {
+                                        "bsonType": "string"
+                                    }
+                                },
+                                "title": "colour_of_amniotic_fluid"
+                            }
+                        },
+                        "context": {
+                            "bsonType": "string"
+                        },
+                        "createdDate": {
+                            "bsonType": "date"
+                        },
+                        "hand_presentation": {
+                            "bsonType": "string"
+                        },
+                        "performer": {
+                            "bsonType": "string"
+                        },
+                        "umbilical_prolase": {
+                            "bsonType": "string"
+                        },
+                        "vaginal_bleeding": {
+                            "bsonType": "string"
+                        },
+                        "vaginal_bleeding_datetime": {
+                            "bsonType": "date"
+                        },
+                        "vaginal_trauma": {
+                            "bsonType": "string"
+                        }
+                    }
+                },
+                "title": "per_speculum"
+            }
+        },
+        "required": [
+            "_id",
+            "_partition",
+            "mr"
+        ],
+        "title": "PerSpeculum"
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "collection": "vital",
+    "database": "tracker",
+    "id": "603e24945bd76abc7a57e1d8",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "bmiSubSchema": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "bmi": {
+                            "bsonType": "string"
+                        },
+                        "context": {
+                            "bsonType": "string"
+                        },
+                        "dateTime": {
+                            "bsonType": "string"
+                        },
+                        "height": {
+                            "bsonType": "string"
+                        },
+                        "note": {
+                            "bsonType": "string"
+                        },
+                        "performer": {
+                            "bsonType": "string"
+                        },
+                        "weight": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "bmiSubSchema"
+                }
+            },
+            "encounter_id": {
+                "bsonType": "string"
+            },
+            "gn_id": {
+                "bsonType": "string"
+            },
+            "mr": {
+                "bsonType": "string"
+            },
+            "vitalSubSchema": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "bpdia": {
+                            "bsonType": "string"
+                        },
+                        "bpsys": {
+                            "bsonType": "string"
+                        },
+                        "context": {
+                            "bsonType": "string"
+                        },
+                        "dateTime": {
+                            "bsonType": "string"
+                        },
+                        "note": {
+                            "bsonType": "string"
+                        },
+                        "performer": {
+                            "bsonType": "string"
+                        },
+                        "pluse_rate": {
+                            "bsonType": "int"
+                        },
+                        "respiratory_rate": {
+                            "bsonType": "int"
+                        },
+                        "temp": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "vitalSubSchema"
+                }
+            }
+        },
+        "required": [
+            "_id",
+            "_partition",
+            "mr"
+        ],
+        "title": "vital"
+    }
+}

@@ -1,0 +1,241 @@
+{
+    "collection": "ActivePhase",
+    "database": "tracker",
+    "id": "603e18925bd76abc7a560e33",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "condition_of_fetus": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "color_of_amniotic_fluid": {
+                            "bsonType": "string"
+                        },
+                        "context": {
+                            "bsonType": "string"
+                        },
+                        "date": {
+                            "bsonType": "date"
+                        },
+                        "fetal_heart_rate": {
+                            "bsonType": "int"
+                        },
+                        "molding": {
+                            "bsonType": "string"
+                        },
+                        "performer": {
+                            "bsonType": "string"
+                        },
+                        "time": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "condition_of_fetus"
+                }
+            },
+            "condition_of_mother": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "blood_pressure": {
+                            "bsonType": "string"
+                        },
+                        "context": {
+                            "bsonType": "string"
+                        },
+                        "date": {
+                            "bsonType": "date"
+                        },
+                        "performer": {
+                            "bsonType": "string"
+                        },
+                        "pluse_rate": {
+                            "bsonType": "string"
+                        },
+                        "temperature": {
+                            "bsonType": "string"
+                        },
+                        "time": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "condition_of_mother"
+                }
+            },
+            "context": {
+                "bsonType": "string"
+            },
+            "date": {
+                "bsonType": "date"
+            },
+            "drug_iv_administered": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "context": {
+                            "bsonType": "string"
+                        },
+                        "date": {
+                            "bsonType": "date"
+                        },
+                        "drug_administered_time": {
+                            "bsonType": "date"
+                        },
+                        "drug_dose": {
+                            "bsonType": "string"
+                        },
+                        "drug_mode": {
+                            "bsonType": "string"
+                        },
+                        "drug_name": {
+                            "bsonType": "string"
+                        },
+                        "drug_time": {
+                            "bsonType": "string"
+                        },
+                        "drug_unit": {
+                            "bsonType": "string"
+                        },
+                        "iv_time": {
+                            "bsonType": "string"
+                        },
+                        "iv_type": {
+                            "bsonType": "string"
+                        },
+                        "performer": {
+                            "bsonType": "string"
+                        },
+                        "qty_of_rate": {
+                            "bsonType": "string"
+                        },
+                        "rate_iv_fluid_administred": {
+                            "bsonType": "string"
+                        },
+                        "time": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "drug_iv_administered"
+                }
+            },
+            "gn_id": {
+                "bsonType": "string"
+            },
+            "labour_progress": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "cervical_dilation": {
+                            "bsonType": "int"
+                        },
+                        "context": {
+                            "bsonType": "string"
+                        },
+                        "date": {
+                            "bsonType": "date"
+                        },
+                        "descent_of_head": {
+                            "bsonType": "string"
+                        },
+                        "oxytocin_dose": {
+                            "bsonType": "string"
+                        },
+                        "oxytocin_rate": {
+                            "bsonType": "string"
+                        },
+                        "performer": {
+                            "bsonType": "string"
+                        },
+                        "time": {
+                            "bsonType": "string"
+                        },
+                        "uterine_contraction_duration": {
+                            "bsonType": "string"
+                        },
+                        "uterine_contraction_frequency": {
+                            "bsonType": "string"
+                        },
+                        "uterine_contraction_severity": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "labour_progress"
+                }
+            },
+            "mr": {
+                "bsonType": "string"
+            },
+            "performer": {
+                "bsonType": "string"
+            },
+            "time": {
+                "bsonType": "string"
+            },
+            "urine_findings": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "accetone_presecnce": {
+                            "bsonType": "string"
+                        },
+                        "context": {
+                            "bsonType": "string"
+                        },
+                        "date": {
+                            "bsonType": "date"
+                        },
+                        "glucose": {
+                            "bsonType": "string"
+                        },
+                        "ketone_presecne": {
+                            "bsonType": "string"
+                        },
+                        "performer": {
+                            "bsonType": "string"
+                        },
+                        "protein_presecne": {
+                            "bsonType": "string"
+                        },
+                        "time": {
+                            "bsonType": "string"
+                        },
+                        "urine_finding_time": {
+                            "bsonType": "date"
+                        },
+                        "volume": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "urine_findings"
+                }
+            }
+        },
+        "required": [
+            "_id",
+            "_partition",
+            "mr"
+        ],
+        "title": "ActivePhase"
+    }
+}

@@ -1,0 +1,139 @@
+{
+    "collection": "DeliveryRecording",
+    "database": "tracker",
+    "id": "603e1998e4b688e16f6ed777",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "amtsl_controlled_cordtraction": {
+                "bsonType": "string"
+            },
+            "amtsl_utereotonic_administered": {
+                "bsonType": "string"
+            },
+            "amtsl_uterine_massaged": {
+                "bsonType": "string"
+            },
+            "anaesthesia_type": {
+                "bsonType": "string"
+            },
+            "baby_recording": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "apgar_10min": {
+                            "bsonType": "string"
+                        },
+                        "apgar_1min": {
+                            "bsonType": "string"
+                        },
+                        "apgar_5min": {
+                            "bsonType": "string"
+                        },
+                        "birth_weight": {
+                            "bsonType": "string"
+                        },
+                        "breast_feed_intiated": {
+                            "bsonType": "string"
+                        },
+                        "congential_anomaly": {
+                            "bsonType": "string"
+                        },
+                        "cried_immediately": {
+                            "bsonType": "string"
+                        },
+                        "gender": {
+                            "bsonType": "string"
+                        },
+                        "identification_marks": {
+                            "bsonType": "string"
+                        },
+                        "remarks_on_baby": {
+                            "bsonType": "string"
+                        },
+                        "required_resuscitation": {
+                            "bsonType": "string"
+                        },
+                        "shift": {
+                            "bsonType": "string"
+                        },
+                        "skin_to_skin_contact": {
+                            "bsonType": "string"
+                        },
+                        "temperature": {
+                            "bsonType": "string"
+                        },
+                        "vaccination_done": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "baby_recording"
+                }
+            },
+            "context": {
+                "bsonType": "string"
+            },
+            "cord_clamping_delayed": {
+                "bsonType": "string"
+            },
+            "delivery_complications": {
+                "bsonType": "string"
+            },
+            "delivery_date": {
+                "bsonType": "date"
+            },
+            "delivery_time": {
+                "bsonType": "string"
+            },
+            "delivery_type": {
+                "bsonType": "string"
+            },
+            "encounter_id": {
+                "bsonType": "string"
+            },
+            "episiotomy_performed": {
+                "bsonType": "string"
+            },
+            "gn_id": {
+                "bsonType": "string"
+            },
+            "mr": {
+                "bsonType": "string"
+            },
+            "outcome": {
+                "bsonType": "string"
+            },
+            "performer": {
+                "bsonType": "string"
+            },
+            "ppiucd_inserted": {
+                "bsonType": "string"
+            },
+            "remarks_on_mothers": {
+                "bsonType": "string"
+            }
+        },
+        "required": [
+            "id",
+            "_partition",
+            "mr"
+        ],
+        "title": "DeliveryRecording"
+    }
+}

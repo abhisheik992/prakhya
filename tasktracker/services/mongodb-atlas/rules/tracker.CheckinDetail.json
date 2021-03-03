@@ -1,0 +1,78 @@
+{
+    "collection": "CheckinDetail",
+    "database": "tracker",
+    "id": "603e1908310bd74b3c3e1513",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "Checkinfdatetime": {
+                "bsonType": "date"
+            },
+            "Checkoutdatetime": {
+                "bsonType": "date"
+            },
+            "Username": {
+                "bsonType": "string"
+            },
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "deviceid": {
+                "bsonType": "string"
+            },
+            "email": {
+                "bsonType": "string"
+            },
+            "mobile": {
+                "bsonType": "string"
+            },
+            "name": {
+                "bsonType": "string"
+            },
+            "password": {
+                "bsonType": "string"
+            },
+            "role": {
+                "bsonType": "string"
+            },
+            "rolename": {
+                "bsonType": "string"
+            },
+            "status": {
+                "bsonType": "boolean"
+            },
+            "userid": {
+                "bsonType": "objectId"
+            }
+        },
+        "required": [
+            "_id",
+            "_partition",
+            "userid",
+            "password",
+            "name",
+            "mobile",
+            "email",
+            "role",
+            "rolename",
+            "Username",
+            "Checkinfdatetime",
+            "Checkoutdatetime",
+            "deviceid",
+            "status"
+        ],
+        "title": "CheckinDetail"
+    }
+}

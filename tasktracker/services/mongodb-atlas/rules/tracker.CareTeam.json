@@ -1,0 +1,75 @@
+{
+    "collection": "CareTeam",
+    "database": "tracker",
+    "id": "603e18d6d41399b66882400c",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "category": {
+                "bsonType": "string"
+            },
+            "encounter_id": {
+                "bsonType": "int"
+            },
+            "mr": {
+                "bsonType": "string"
+            },
+            "note": {
+                "bsonType": "string"
+            },
+            "team": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        " name": {
+                            "bsonType": "string"
+                        },
+                        "_partition": {
+                            "bsonType": "string"
+                        },
+                        "en_dateTime": {
+                            "bsonType": "date"
+                        },
+                        "practitioner_id": {
+                            "bsonType": "string"
+                        },
+                        "provider": {
+                            "bsonType": "string"
+                        },
+                        "role": {
+                            "bsonType": "string"
+                        },
+                        "st_dateTime": {
+                            "bsonType": "date"
+                        },
+                        "status": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "Team"
+                }
+            }
+        },
+        "required": [
+            "_id",
+            "_partition"
+        ],
+        "title": "CareTeam"
+    }
+}

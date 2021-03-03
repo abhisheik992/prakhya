@@ -1,0 +1,73 @@
+{
+    "collection": "PatientComorbidities",
+    "database": "tracker",
+    "id": "603f24ae310bd74b3c53c68e",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "context": {
+                "bsonType": "string"
+            },
+            "dateTime": {
+                "bsonType": "date"
+            },
+            "gn_id": {
+                "bsonType": "string"
+            },
+            "listOfComorbidities": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "code": {
+                            "bsonType": "string"
+                        },
+                        "label": {
+                            "bsonType": "string"
+                        },
+                        "nature": {
+                            "bsonType": "string"
+                        },
+                        "section": {
+                            "bsonType": "string"
+                        },
+                        "type": {
+                            "bsonType": "string"
+                        }
+                    }
+                },
+                "title": "listOfComorbidities"
+            },
+            "mr": {
+                "bsonType": "string"
+            },
+            "note": {
+                "bsonType": "string"
+            },
+            "performer": {
+                "bsonType": "string"
+            }
+        },
+        "required": [
+            "id",
+            "mr",
+            "_partition"
+        ],
+        "title": "PatientComorbidities"
+    }
+}

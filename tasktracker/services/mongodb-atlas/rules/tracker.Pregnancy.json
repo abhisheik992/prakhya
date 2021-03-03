@@ -1,0 +1,128 @@
+{
+    "collection": "Pregnancy",
+    "database": "tracker",
+    "id": "603e1f9ad41399b668832856",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "abortions": {
+                "bsonType": "int"
+            },
+            "age_of_lastchild": {
+                "bsonType": "int"
+            },
+            "dead": {
+                "bsonType": "int"
+            },
+            "encounter_id": {
+                "bsonType": "string"
+            },
+            "gravida": {
+                "bsonType": "int"
+            },
+            "living": {
+                "bsonType": "int"
+            },
+            "mr": {
+                "bsonType": "string"
+            },
+            "para": {
+                "bsonType": "int"
+            },
+            "pregnancy_p_details": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        "P_Id": {
+                            "bsonType": "int"
+                        },
+                        "_partition": {
+                            "bsonType": "string"
+                        },
+                        "conception_mode": {
+                            "bsonType": "string"
+                        },
+                        "edd": {
+                            "bsonType": "string"
+                        },
+                        "ga": {
+                            "bsonType": "string"
+                        },
+                        "lmp": {
+                            "bsonType": "string"
+                        },
+                        "p_no": {
+                            "bsonType": "int"
+                        },
+                        "p_type": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "Pregnancy_P_Details"
+                }
+            },
+            "primipara": {
+                "bsonType": "boolean"
+            },
+            "risk_indicator": {
+                "bsonType": "int"
+            },
+            "scan_edd": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "properties": {
+                        " s_ga": {
+                            "bsonType": "string"
+                        },
+                        "_partition": {
+                            "bsonType": "string"
+                        },
+                        "s_date": {
+                            "bsonType": "string"
+                        },
+                        "s_edd": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "title": "scan_edd"
+                }
+            },
+            "status": {
+                "bsonType": "string"
+            }
+        },
+        "required": [
+            "_id",
+            "_partition",
+            "primipara",
+            "gravida",
+            "para",
+            "living",
+            "abortions",
+            "dead",
+            "lmp",
+            "edd",
+            "ga",
+            "conception_mode",
+            "p_type"
+        ],
+        "title": "Pregnancy"
+    }
+}
